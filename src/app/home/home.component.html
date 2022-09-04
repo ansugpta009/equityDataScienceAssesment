@@ -1,0 +1,15 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">You are Logged IN</h4>
+    <div class="card-body">
+        <h6>List of Users</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="users">
+            <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+            <li>Second User</li>
+            <li>Third User</li>
+            <li>Fourth User</li>
+            <li>Fifth User</li>
+            <li>Sixth User</li>
+        </ul>
+    </div>
+</div>
